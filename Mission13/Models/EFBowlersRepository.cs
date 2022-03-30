@@ -31,8 +31,6 @@ namespace Mission13.Models
                 _context.SaveChanges();
             }
 
-            //_context.Update(b);
-            //_context.SaveChanges();
         }
 
         public void AddBowler(Bowler b)
@@ -51,8 +49,6 @@ namespace Mission13.Models
                 _context.SaveChanges();
             }
 
-            //_context.Add(b);
-            //_context.SaveChanges();
         }
 
         public void DeleteBowler(Bowler b)

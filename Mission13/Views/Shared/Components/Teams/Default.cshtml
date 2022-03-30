@@ -9,11 +9,6 @@
 
     <a class="navbar-brand btn btn-outline-secondary" asp-controller="Home" asp-action="Index" asp-route-team="0">Home</a><br /><br />
 
-    @*@foreach (int t in Model)
-    {
-        <a asp-controller="Home" asp-action="Index" asp-route-team="@t"
-           class="btn btn-primary">@t</a><br />
-    }*@
 
     @foreach (Team t in Model)
     {

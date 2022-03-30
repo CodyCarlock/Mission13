@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+//View component to load data into the view component 
+
 namespace Mission13.Components
 {
     public class TeamsViewComponent : ViewComponent
@@ -20,9 +22,6 @@ namespace Mission13.Components
         {
             ViewBag.SelectedTeam = RouteData?.Values["team"];
             var T = repo.Teams;
-                //.Select(x => x.TeamID)
-                //.Distinct()
-                //.OrderBy(x => x);
 
             return View(T);
         }
